@@ -23,6 +23,8 @@ function checkKey(e) {
 }
 
 
+//REFERENCE: https://github.com/Beat0154/easiest-game-ever/blob/master/index.html
+
 var character = document.getElementById("character");
 var block = document.getElementById("block");
 block.style.animation = "none";
