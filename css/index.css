@@ -1,0 +1,350 @@
+.title {
+	text-align: center;
+	color: cornflowerblue;
+	font-family: 'American Typewriter', serif;
+  font-size: 50px;
+	font-weight: 50;  
+  position: absolute;
+  top: 60px;
+  margin-left: 540px;
+}
+
+.title-description{
+	text-align: center;
+	color: cornflowerblue;
+	font-family: 'American Typewriter', serif;
+  font-size: 30px;
+	font-weight: 50;
+  position: absolute;
+  top: 120px;
+  margin-left: 560px;
+}
+
+.bio {
+  position: absolute;
+  font-family: 'American Typewriter', serif;
+  font-size: 18px;
+	font-weight: 50;
+  margin-left: 70px;
+  margin-top: 160px;
+  inline-size: 400px;
+  overflow-wrap: break-word;
+}
+
+.bioTitle {
+  position: absolute;
+  font-family: 'American Typewriter', serif;
+  font-size: 30px;
+	font-weight: 50;
+  margin-left: 70px;
+  margin-top: 130px;
+  inline-size: 400px;
+  overflow-wrap: break-word;
+}
+
+.Picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 5px;
+  transform: scale(0.05, 0.05);
+}
+
+.ohiopic {
+  position: absolute;
+  top:  150px;
+  left:  600px;
+}
+
+.indianapic {
+  position: absolute;
+  top:  450px;
+  left:  610px;
+}
+
+.arrow{
+    position: absolute;
+    margin-top: 380px;
+    margin-left: 680px;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #423517;
+    border-right: 5px solid #423517;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+#skills{
+  padding:50px 15px;
+  text-align:center
+}
+#skills h2{
+  font-family: 'American Typewriter', serif;
+  font-size: 30px;
+	font-weight: 50;  
+  margin-left: 850px;
+  margin-top: 80px;
+}
+#skills ul{
+  display:block;
+  margin-left: 900px;
+  padding:0;
+  max-width:400px;
+}
+#skills li{
+  display:inline-block;
+  margin:10px;
+  padding:5px 10px;
+  color: gainsboro;
+  background: dimgrey;
+  list-style:none;
+  cursor:default;
+  font-size:1.2em;
+}
+
+.purduepic {
+  position: absolute;
+  top: 50px;
+  left: 200px;
+  width: 10px;
+  height: 5px;
+  transform: scale(0.1, 0.1);
+}
+
+#Education{
+  padding:50px 15px 20px 15px;
+  margin-top: 150px;
+  text-align:center}
+#Education h2{
+  color:#374054;
+  margin-bottom:50px
+}
+
+#Projects{
+  padding:50px 15px 20px 15px;
+  margin-top: 150px;
+  text-align:center}
+#Projects h2{
+  color:#374054;
+  margin-bottom:50px
+}
+.education-block{
+  font-family: 'American Typewriter', serif;
+  max-width:700px;
+  margin:0 auto 30px auto;
+  padding:15px;
+  border:1px solid #dcd9d9;
+  text-align:left
+}
+.education-block h3{
+  font-weight:500;
+  float:left;
+  margin:0;
+  color:#374054
+}
+.education-block span{
+  color:#74808a;
+  float:right}
+.education-block h4{
+  color:#74808a;
+  clear:both;
+  font-weight: 500; 
+  margin:0 0 15px 0;
+}
+.education-block ul{
+  margin:0;
+  color:#74808a;
+  font-size:0.9em;
+  padding:0 10px 0 15px;
+}
+
+
+.project-block{
+  font-family: 'American Typewriter', serif;
+  max-width:700px;
+  margin:0 auto 30px auto;
+  padding:15px;
+  border:1px solid #dcd9d9;
+  text-align:left
+}
+.project-block h3{
+  font-weight:500;
+  float:left;
+  margin:0;
+  color:#374054
+}
+.project-block span{
+  color:#74808a;
+  float:right}
+.project-block h4{
+  color:#74808a;
+  clear:both;
+  font-weight: 500; 
+  margin:0 0 15px 0;
+}
+.project-block ul{
+  margin-top: 30px;
+  color:#74808a;
+  font-size:0.9em;
+  padding:0 10px 0 15px;
+}
+
+.purdue {
+  font-family: 'American Typewriter', serif;
+  font-size: 15px;
+	font-weight: 50;  
+  margin-left: 50px;
+  margin-top: 80px;
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #F0FFFF;
+
+  position: absolute;
+  top: 0;
+  margin-left: 460px;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 20px 16px;
+  transition: 0.3s;
+  font-size: 20px;
+
+  position: sticky;
+  top: 30px;
+}
+
+.tab button:hover {
+  background-color: #b3dbff;
+}
+
+.tab button.active {
+  background-color: cornflowerblue;
+}
+
+.tabcontent {
+  display: none;
+  position: relative;
+  top: 70px;
+  padding: 6px 12px;
+  animation: fadeEffect 1s;
+}
+
+/* Timeline Container */
+.timeline {
+  font-family: 'American Typewriter', serif;
+  background: var(--primary-color);
+  margin-left: 450px;
+  margin-top: 180px;
+  padding: 20px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid grey;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: grey;
+  color: black;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+/* Information about the timeline */
+.info {
+  flex-direction: column;
+}
+
+#accenture::before {
+  content: "Current";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -100px;
+}
+#crk::before {
+  content: "Summer 2021";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -100px;
+}
+#ta::before {
+  content: "2019-2020";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: -100px;
+}
+
+/* Title of the card */
+.titletime {
+  color: black;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Timeline dot  */
+.titletime::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid black;
+}
+
+#Contact{
+	font-family: 'American Typewriter', serif;
+}
+.email {
+  margin-top: 180px;
+  margin-left: 0px;
+}
+.linkin {
+  margin-top: -80px;
+  margin-left: 500px;
+}
+.github {
+  margin-top: -220px;
+  margin-left: 1000px;
+}
+
+@keyframes fadeEffect{
+	from{opacity: 0;}
+	to{opacity: 1;}
+}
+
+@keyframes animate {
+  0%{
+      opacity: 0;
+      transform: rotate(45deg) translate(-20px,-20px);
+  }
+  50%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+      transform: rotate(45deg) translate(20px,20px);
+  }
+}

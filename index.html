@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html lang ="en" onkeypress= "checkKey(event)">
+<html lang ="en" onkeypress= "checkKey(event)" >
 <head>
-	<link rel="stylesheet"
-	href = "index.css" />
-	<title>Emily Garner</title>
-	<meta charset="utf-8"/>
-    <link rel="icon" href="https://images-na.ssl-images-amazon.com/images/I/71RfdIBigIL._SY550_.jpg">
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Emily Garner </title>
+	<link rel="stylesheet" href = "css/index.css" />
+    <link rel="icon" href="images/eicon.png">
+	
 </head>
-<body>
+
+<body style="background-color:lightcyan">
 	<header>
 		<h1 class="title">Emily Garner</h1>
-		<p class="title-description">Purdue University Computer Engineering Graduate </p>
+		<p class="title-description">Software Developer</p>
 		<div class="Picture">
-			<img src="https://media-exp1.licdn.com/dms/image/C5603AQG95CCTEHAjQw/profile-displayphoto-shrink_200_200/0/1652229745746?e=1664409600&v=beta&t=hGI1ysZPeWJHhfOPWDZhu1Lo2mGn6qcWiCdw1PnmRBQ" alt = "Headshot">
+			<img src="images/headshot.JPG" alt = "Headshot">
 		</div>
 	</header>
 
 	<div class="tab">
-		<button class = "tablinks" onclick="openTab(event, 'Home')">Home
-        </button>
+		<button class = "tablinks" onclick="openTab(event, 'Home')">Home</button>
 		<button class = "tablinks" onclick="openTab(event, 'Education')">Education</button>
 		<button class = "tablinks" onclick="openTab(event, 'Work Experience')">Work</button>
 		<button class = "tablinks" onclick="openTab(event, 'Projects')">Projects</button>
@@ -26,102 +28,162 @@
 	</div>
 
     <div id="Home" class ="tabcontent" style="display:block">
-    	<h2>Bio:</h2>
-    	<div class="indent">
-    		<p>I am originally from Cincinnati, Ohio and I attended school at Purdue University in West Lafayette, Indiana. My main career interest is software development. Interests outside of my career goals include weight lifting, environmental conservation and music.</p>
+    	<h2 class = "bioTitle">Bio:</h2>
+    	<div class="bio">
+    		<p>I am originally from Cincinnati, Ohio and I graduated Purdue University in 
+				May, 2022 with a degree in computer engineering. My main career interest is software development.
+				 I am always trying to learn more as well as advance my current skills. 
+				Interests outside of my career goals include weight lifting, running, environmental conservation and music.</p>
     	</div>
-    	<div class="game">
-	        <div id="character"></div>
-	        <div id="block"></div>
-	    </div>
-	    <div class = "gameDescription">
-	    	<p> Instructions: Press "w" to jump. If at any point you would like to start a new game, press "x".</p>
-	    </div>
-	    <div class="score"> Score: <span id="scoreSpan"></span></div>
-	    <div class="cincypic">
-			<img src="https://www.nps.gov/wiho/planyourvisit/images/cincinnati-ohio-location.jpg?maxwidth=650&autorotate=false" alt = "Cincy" width = "200" height = "200">
+	    <div class="ohiopic">
+			<img src="images/ohio.jpeg" alt = "Cincy" width = "200" height = "200">
 		</div>
-		<div class="purduepic">
-			<img src="https://render.fineartamerica.com/images/rendered/default/poster/8/10/break/images-medium-5/purdue-university-boilermakers-west-lafayette-indiana-college-town-state-map-poster-series-no-090-design-turnpike.jpg" alt = "Cincy" width = "140" height = "140">
+		<div class="indianapic">
+			<img src="images/indiana.png" alt = "Cincy" width = "140" height = "140">
 		</div>
 	    <div class="arrow"> <span></span><span></span><span></span>
 	    </div>
+		<div id="skills">
+			<h2>Skills:</h2>
+			<ul>
+				<li>C</li>
+				<li>C++</li>
+				<li>Java</li>
+				<li>Javascript</li>
+				<li>Python</li>
+				<li>Javascript</li>
+				<li>Node.js</li>
+				<li>SQL</li>
+				<li>HTML</li>
+				<li>Microsoft Products</li>
+			</ul>
+		</div>
     </div>
 
-    <div id="Education" class="tabcontent">
-    	<h2>Purdue University</h2>
-    	<div class="indent">
-    		<p><em>West Lafayette, Indiana</em></p>
-    		<p>2018-2022</p> 
-    		<p><b>Major:</b> Computer Engineering</p>
-    		<p><b>Course topics</b>: Advanced C programming, Python for data science, Data structures, Microprocessor systems, Computer graphics, Object oriented programming in C++ and Java, Computer communication networks</p>
-    		<p><b>Leadership</b>: • WECE (Women in Electrical and Computer Engineering) Publicity Director</p>
-    		<p>• Women in Engineering Mentor</p>
-   		</div>
-    	<h2>Turpin High School</h2>
-    	<div class="indent">
-    		<p><em>Cincinnati, Ohio</em></p>
-    		<p>2014-2018</p>
-    		<p>Honors Diploma</p>
-    		<p>Cum Laude</p>
-    	</div>
-    </div>
+    <div id="Education", class="tabcontent">
+		<div class="purduepic">
+			<img src="images/purdue.png">
+		</div>
+        <div class="education-block">
+            <h3>Purdue University</h3>
+            <span>Aug 2018 - May 2022</span>
+            <h4>Bachelor of Science in Computer Engineering</h4>
+            <ul>
+                <li>
+                    <b>Course topics:</b> Advanced C programming, Python for data science, 
+					Data structures, Microprocessor systems, Computer graphics, 
+					Object oriented programming in C++ and Java, 
+					Computer communication networks
+                </li>
+                <li>
+                    <b>Leadership:</b> WECE (Women in Electrical and Computer Engineering) Publicity Director
+					, Women in Engineering Mentor
+				</li>
+            </ul>
+        </div>
+
+        <div class="education-block">
+            <h3>Turpin High School</h3>
+            <span>Aug 2014 - May 2018</span>
+            <h4>Honors diploma</h4>
+        </div>
+	</div>
 
     <div id="Work Experience" class="tabcontent">
-        <h2>Summer Law Firm Associate</h2>
-        <div class="indent">
-            <p><em>Condo Roccia Koptiw LLP</em></p>
-            <p>2021 Summer</p>
-            <p>• Researched prior art for conflicting intellectual property of approaching devices</p>
-			<p>• Examined technical diagrams and preformed a comparative analysis against similar products</p>
-			<p>• Collaborated in a cross functional team of lawyers and engineers to develop incoming designs</p>
-        </div>
-    	<h2>Engineering Undergraduate Teaching Assistant</h2>
-    	<div class="indent">
-    		<p><em>Purdue University</em></p>
-    		<p>2019 - 2020</p>
-    		<p>• Assistant to a professor for a first-year engineering course at Purdue University</p>
-			<p>• Serviced over 100 engineering students with data analysis projects involving MATLAB and Microsoft Excel</p>
-    	</div>
+        <div class="timeline">
+			<div class="outer">
+			  <div class="card">
+				<div class="info" id = "accenture">
+				  <h3 class="titletime">Tech Arch Delivery Analyst<br><em>Accenture</em></h3>
+				  <p><br>
+				
+				</p>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="info" id = "crk">
+				  <h3 class="titletime">Summer Associate <br><em>Condo Roccia Koptiw LLP</em></h3>
+				  <p>
+					- Researched prior art for potential intellectual property of approaching products<br>
+					- Examined technical diagrams and preformed a comparative analysis against similar products<br>
+					- Shadowed legal professionals and engineers	
+				  </p>
+				</div>
+			  </div>
+			  <div class="card">
+				<div class="info" id = "ta">
+				  <h3 class="titletime">Engineering Teaching Assistant <br><em>Purdue University</em></h3>
+				  <p>
+					- Teaching assistant for a first-year engineering course at Purdue University<br>
+					- Assisted with basics of the C language for new programmers<br>
+					- Helped over 100 engineering students with data analysis projects involving MATLAB and Microsoft Excel
+				</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
     </div>
 
     <div id="Projects" class="tabcontent">
-    	<h2>This Website!</h2>
-    	<div class="indent">
-    		<p><em>Fall 2019</em></p>
-    		<p>This website was created using HTML, CSS and Javascript programming. These skills were self-taught through online resources as well as prior course-work in other languages.</p>
-    	</div>
-        <h2>Microprocessor systems and interfacing</h2>
-        <div class="indent">
-            <p><em>Fall 2020</em></p>
-            <p>In this course, I built circuits as well as programmed in assembly with differnet microprocessor systems. In the end, I was able to build a game using the buttons, timer, and sound feature on the circuit board.</p>
+    	<div class="project-block">
+            <h3>This Website!</h3>
+            <span>Javascript, HTML, CSS</span>
+			<ul>
+                <li>
+                    This website was created from scratch using self-taught skills through online resources
+                </li>
+                <li>
+                    Website is being periodically updated and monitored through a cloud platform
+				</li>
+            </ul>
         </div>
-    	<h2>Multiple assignments in course based on C and Python</h2>
-    	<div class="indent">
-    		<p><em>Fall 2019</em></p>
-    		<p>In my advanced programming in C course, I completed assignments in C such as as making a Sudoku solver, a maze solver, building and working with binary trees, building a basic calculator, etc. My python course focused on data analysis. However, these are not on my public github due to the restrictions of the course.</p>
-    	</div>
-    	<h2>MATLAB algorithm for quality analysis of thermocouples</h2>
-    	<div class="indent">
-    		<p><em>Spring 2019</em></p>
-    		<p>I worked closely in a team of four students in a freshman engineering course. We created multiple functions in MATLAB in order to analyze large sets of data to acquire four seperate parameters. These parameters are then used to generate a calibration plot and error in order to determine how well the parameters fit the data for the thermocouples.</p>
-    	</div>
+
+        <div class="project-block">
+            <h3>XML Parser with Interactive Video Game</h3>
+            <span>C++</span>
+			<ul>
+                <li>
+                    Programmed a game that reads an XML file as input for the ”map” or layout of the game
+                </li>
+                <li>
+                    The game featured multiple interactive commands for the user as well as personalization
+				</li>
+            </ul>
+        </div>
+
+		<div class="project-block">
+            <h3>OpenGL 3D Graphics Project</h3>
+            <span>C, C++, OpenGL Libraries</span>
+			<ul>
+                <li>
+                    Program took object files as input and projected them into an image within a view frustum
+                </li>
+                <li>
+                    Performed image processing such as texturing and shading
+				</li>
+            </ul>
+        </div>
     </div>
 
 	<div id="Contact" class="tabcontent">
-	  <h2>Send me an email:</h2>
-	  <p>
-	  	<a href="mailto:emilygarner24@gmail.com"
-	  	target = "_top">Click Here to Send Email</a>
-	  <h2>LinkedIn:</h2>
-	  	<a href="https://www.linkedin.com/in/emily-ann-garner/" target="_blank">
-	  	 	<img src="https://static.jeffbullas.com/wp-content/uploads/2012/03/How-to-Harness-the-Power-of-LinkedIn-%E2%80%93-INFOGRAPHIC1.png" style="width:150px; height:150px;">
-	   	 </a>
-	  <h2>Github:</h2>
-	  	<a href = "https://github.com/garnere1" target="_blank">
-	  		<img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROcwvdPPQ7fyfBkSW9e-OC7SlGvyfhKMxg05vmkIm5i18kdGGi&s" style="width: 150px; height:150px;">
-	  	</a>
+		<div class = email>
+			<h2>Send me an email:</h2>
+			<a href="mailto:emilygarner24@gmail.com"
+			target = "_top">Click Here to Send Email</a>
+		</div>
+		<div class = "linkin">
+			<h2>LinkedIn:</h2>
+			<a href="https://www.linkedin.com/in/emily-ann-garner/" target="_blank">
+				<img src="images/linkedin.png" style="width:150px; height:150px;">
+			</a>
+		</div>
+		<div class = "github">
+			<h2>Github:</h2>
+			<a href = "https://github.com/garnere1" target="_blank">
+				<img src = "images/github.png" style="width: 150px; height:150px;">
+			</a>
+		</div>
     </div>
 </body>
-<script src="index.js"></script>
+<script src="js/index.js"></script>
 </html>
