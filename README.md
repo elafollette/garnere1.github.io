@@ -1,2 +1,2 @@
-# garnere1.github.io
-Website
+# my-react-app
+ React Website

@@ -1,0 +1,118 @@
+/* (A) TIMELINE CONTAINER */
+.alt-vtl {
+  /* (A1) RELATIVE POSITION REQUIRED TO PROPERLY POSITION THE TIMELINE */
+  position: relative;
+ 
+  /* (A2) WIDTH RESTRICTION & CENTER ON PAGE */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* (B) DRAW TIMELINE USING ::BEFORE */
+.alt-vtl::before {
+  /* (B1) VERTICAL LINE */
+  content: "";
+  width: 5px;
+  background-color: #d3bbbb;
+ 
+  /* (B2) POSITION IN THE MIDDLE */
+  position: absolute;
+  top: 0; bottom: 0; left: 50%;
+}
+
+/* (C) EVENTS */
+div.alt-event {
+  /* (C1) COSMETICS */
+  background-color: #d8c8c8;
+  border-radius: 1vw;
+ 
+  /* (C2) DIMENSIONS */
+  padding: 2vw 2vw;
+  width: 45%;
+  margin-bottom: 10px;
+ 
+  /* (C3) POSITION - DEFAULT LEFT SIDE */
+  position: relative;
+  left: 0;
+}
+ 
+/* (C4) CHANGE EVENT POSITION TO RIGHT SIDE */
+div.right { left: 55%; }
+
+/* (D) COSMETICS FOR EVENT DATE & TEXT */
+p.date {
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #000000;
+  border-radius: 10%;
+  border-width: 5px;
+  border-style:ridge;
+  border-color: #7a5555;
+}
+p.comp {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 5px 0 0 0;
+  color: #222;
+}
+p.pos {
+  margin: 5px 0 0 0;
+  color: #222;
+}
+
+p.txt {
+  margin: 5px 0 0 0;
+  color: #222;
+}
+
+.Experience li {
+  margin-top: 2%;
+}
+
+/* (E) EVENT "SPEECH BUBBLE CALLOUT" */
+/* (E1) SHARED */
+div.alt-event::before, div.alt-event.right::before {
+  content: "";
+  border: 10px solid transparent;
+  position: absolute;
+}
+ 
+/* (E2) FOR EVENTS ON THE LEFT */
+div.alt-event::before {
+  /* (E2-1) "MAGIC TRIANGLE" */
+  border-left-color: #d8c8c8;
+  border-right: 0;
+ 
+  /* (E2-2) POSITION TRIANGLE ON THE RIGHT */
+  left: 100%; top: 20%;
+}
+ 
+/* (E3) FOR EVENTS ON THE RIGHT */
+div.alt-event.right::before {
+  /* (E3-1) "MAGIC TRIANGLE" */
+  border-right-color: #d8c8c8;
+  border-left: 0;
+ 
+  /* (E3-2) POSITION TRIANGLE ON THE LEFT */
+  left: auto; right: 100%; top: 20%;
+}
+ 
+/* (F) EVENT CIRCLE ON TIMELINE */
+/* (F1) SHARED */
+div.alt-event::after, div.alt-event.right::after {
+  /* (F1-1) "MAGIC CIRCLE" */
+  content: "";
+  background: #fff;
+  border: 4px solid #d8c8c8;
+  width: 16px; height: 16px;
+  border-radius: 50%;
+ 
+  /* (F1-2) POSITION */
+  position: absolute;
+}
+ 
+/* (F2) POSITION TO THE LEFT */
+div.alt-event::after { top: 20%; left: 108%; }
+ 
+/* (F3) POSITION TO THE RIGHT */
+div.alt-event.right::after { top: 20%; left: auto; right: 105%; }

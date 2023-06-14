@@ -1,0 +1,120 @@
+
+* {
+    text-align: center;
+}
+
+.leftSec {
+    width: 50%;
+    height: 550px;
+    float:left;
+    background-image: url("../../Assets/purdue.png");
+    background-repeat: no-repeat;
+    background-size: 40vw auto;
+    background-position-y: 7vw;
+    background-position-x: center;
+}
+
+.leftSec h1 {
+    margin-top: 4rem;
+    max-width: 100%;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #0f0f10 0%,
+        #FFD700 29%,
+        #0f0f10 67%,
+        #FFD700 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 3vw;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.leftSec h2 {
+    margin-top: 2rem;
+    color: black;
+}
+.leftSec h3 {
+    margin-top: 2rem;
+    color: black;
+}
+
+.leftSec p { 
+    margin-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 7px solid;
+    padding: 8px;
+    border-image: repeating-linear-gradient(to bottom right, #000000, #FFD700, #000000, rgb(250, 238, 0)) 20;  
+    background-color: #ffd90079;
+    color: black;
+}
+
+.leftSec ul {
+    list-style-type: none;
+}
+
+.leftSec li::before {
+    content: "•"; 
+    color: black;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em
+}
+  
+.rightSec {
+    width:50%; 
+    height: 550px;
+    float:left;
+    color: black;
+}
+
+.rightSec h1 {
+    margin-top: 4rem;
+    max-width: 100%;
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #0f0f10 0%,
+        #ffb300 29%,
+        #0f0f10 67%,
+        #ffb300 100%
+    );
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+        font-size: 3vw;
+}
+
+.rightSec h2 {
+    margin-top: 2rem;
+}
+
+.rightSec h3 {
+    margin-top: 2rem;
+}
+
+.rightSec p{
+    margin-top: 1rem;
+}
+
+.awsccp p {
+    margin-top: 1rem;
+}
