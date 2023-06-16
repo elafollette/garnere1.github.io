@@ -5,7 +5,7 @@
 
 .leftSec {
     width: 50%;
-    height: 550px;
+    height: 50vw;
     float:left;
     background-image: url("../../Assets/purdue.png");
     background-repeat: no-repeat;
@@ -15,7 +15,7 @@
 }
 
 .leftSec h1 {
-    margin-top: 4rem;
+    margin-top: 6vw;
     max-width: 100%;
     text-transform: uppercase;
     background-image: linear-gradient(
@@ -43,21 +43,21 @@
 }
 
 .leftSec h2 {
-    margin-top: 2rem;
+    margin-top: 2vw;
     color: black;
 }
 .leftSec h3 {
-    margin-top: 2rem;
+    margin-top: 2vw;
     color: black;
 }
 
 .leftSec p { 
-    margin-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    border: 7px solid;
-    padding: 8px;
-    border-image: repeating-linear-gradient(to bottom right, #000000, #FFD700, #000000, rgb(250, 238, 0)) 20;  
+    margin-top: 2vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border: 0.5vw solid;
+    padding: 1vw;
+    border-image: repeating-linear-gradient(to bottom right, #000000, #FFD700, #000000, rgb(250, 238, 0)) 2vw;  
     background-color: #ffd90079;
     color: black;
 }
@@ -82,7 +82,7 @@
 }
 
 .rightSec h1 {
-    margin-top: 4rem;
+    margin-top: 6vw;
     max-width: 100%;
     text-transform: uppercase;
     background-image: linear-gradient(
@@ -104,19 +104,19 @@
 }
 
 .rightSec h2 {
-    margin-top: 2rem;
+    margin-top: 2vw;
 }
 
 .rightSec h3 {
-    margin-top: 2rem;
+    margin-top: 2vw;
 }
 
 .rightSec p{
-    margin-top: 1rem;
+    margin-top: 2vw;
 }
 
 .awsccp p {
-    margin-top: 1rem;
+    margin-top: 2vw;
 }
 
 .awsccp img{

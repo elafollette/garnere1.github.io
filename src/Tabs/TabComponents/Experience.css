@@ -4,7 +4,6 @@
   position: relative;
  
   /* (A2) WIDTH RESTRICTION & CENTER ON PAGE */
-  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -12,7 +11,7 @@
 .alt-vtl::before {
   /* (B1) VERTICAL LINE */
   content: "";
-  width: 5px;
+  width: 1vw;
   background-color: #d3bbbb;
  
   /* (B2) POSITION IN THE MIDDLE */
@@ -41,27 +40,27 @@ div.right { left: 55%; }
 
 /* (D) COSMETICS FOR EVENT DATE & TEXT */
 p.date {
-  font-size: 1.3em;
+  font-size: 1.5vw;
   font-weight: 700;
   color: #000000;
-  border-radius: 10%;
-  border-width: 5px;
+  border-radius: 2vw;
+  border-width: 1vw;
   border-style:ridge;
   border-color: #7a5555;
 }
 p.comp {
   font-size: 1.2em;
   font-weight: 700;
-  margin: 5px 0 0 0;
+  margin: 2vw 0 0 0;
   color: #222;
 }
 p.pos {
-  margin: 5px 0 0 0;
+  margin: 2vw 0 0 0;
   color: #222;
 }
 
 p.txt {
-  margin: 5px 0 0 0;
+  margin: 2vw 0 0 0;
   color: #222;
 }
 
@@ -72,12 +71,14 @@ p.txt {
 .Experience ul {
   margin: 0;
   padding: 0;
+  text-align: center;
+  list-style-position: inside;
 }
 /* (E) EVENT "SPEECH BUBBLE CALLOUT" */
 /* (E1) SHARED */
 div.alt-event::before, div.alt-event.right::before {
   content: "";
-  border: 10px solid transparent;
+  border: 2vw solid transparent;
   position: absolute;
 }
  
@@ -107,8 +108,8 @@ div.alt-event::after, div.alt-event.right::after {
   /* (F1-1) "MAGIC CIRCLE" */
   content: "";
   background: #fff;
-  border: 4px solid #d8c8c8;
-  width: 16px; height: 16px;
+  border: 1vw solid #d8c8c8;
+  width: 2vw; height: 2vw;
   border-radius: 50%;
  
   /* (F1-2) POSITION */
