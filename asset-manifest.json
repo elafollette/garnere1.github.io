@@ -1,21 +1,21 @@
 {
-  "main.css": "/static/css/main.1f770ee0.chunk.css",
-  "main.js": "/static/js/main.ec6f36fb.chunk.js",
-  "main.js.map": "/static/js/main.ec6f36fb.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.3592e290.js",
-  "runtime~main.js.map": "/static/js/runtime~main.3592e290.js.map",
-  "static/js/2.15af5d24.chunk.js": "/static/js/2.15af5d24.chunk.js",
-  "static/js/2.15af5d24.chunk.js.map": "/static/js/2.15af5d24.chunk.js.map",
-  "static/js/3.518f373d.chunk.js": "/static/js/3.518f373d.chunk.js",
-  "static/js/3.518f373d.chunk.js.map": "/static/js/3.518f373d.chunk.js.map",
-  "index.html": "/index.html",
-  "precache-manifest.d4657d7c6f077cc04eb9ef3dded19466.js": "/precache-manifest.d4657d7c6f077cc04eb9ef3dded19466.js",
-  "service-worker.js": "/service-worker.js",
-  "static/css/main.1f770ee0.chunk.css.map": "/static/css/main.1f770ee0.chunk.css.map",
-  "static/media/aws.png": "/static/media/aws.7b2f6b7b.png",
-  "static/media/azure.png": "/static/media/azure.b227dee8.png",
-  "static/media/computer.png": "/static/media/computer.158059a3.png",
-  "static/media/google.png": "/static/media/google.851c9402.png",
-  "static/media/headshot.jpeg": "/static/media/headshot.574a86fa.jpeg",
-  "static/media/Education.css": "/static/media/purdue.f6701a55.png"
+  "files": {
+    "main.css": "/static/css/main.eec459a6.css",
+    "main.js": "/static/js/main.14c7331b.js",
+    "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
+    "static/media/headshot.jpeg": "/static/media/headshot.7e1a47c4bf7036943723.jpeg",
+    "static/media/computer.png": "/static/media/computer.0b25667bb360cd31ac43.png",
+    "static/media/azure.png": "/static/media/azure.cd2f248a318cbd516e8f.png",
+    "static/media/google.png": "/static/media/google.2d59ab7363bdfffa4786.png",
+    "static/media/purdue.png": "/static/media/purdue.b9f9b948d6650b13f5fb.png",
+    "static/media/aws.png": "/static/media/aws.847cb9f944a663abe39e.png",
+    "index.html": "/index.html",
+    "main.eec459a6.css.map": "/static/css/main.eec459a6.css.map",
+    "main.14c7331b.js.map": "/static/js/main.14c7331b.js.map",
+    "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eec459a6.css",
+    "static/js/main.14c7331b.js"
+  ]
 }
